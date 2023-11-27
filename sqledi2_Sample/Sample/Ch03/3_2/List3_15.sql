@@ -1,4 +1,4 @@
 SELECT shiire_tanka, COUNT(*)
   FROM Shohin
- WHERE shohin_bunrui = 'ˆß•ž'
+ WHERE shohin_bunrui = 'è¡£é¡ž'
  GROUP BY shiire_tanka;

@@ -1,14 +1,14 @@
---SQL ServerAPostgreSQL
+--SQL Serverï¿½APostgreSQL
 BEGIN TRANSACTION;
 
-    --ƒJƒbƒ^[ƒVƒƒƒc‚Ì”Ì”„’P‰¿‚ğ1000‰~’lˆø‚«
+    --ï¿½Jï¿½bï¿½^ï¿½[ï¿½Vï¿½ï¿½ï¿½cï¿½Ì”Ì”ï¿½ï¿½Pï¿½ï¿½ï¿½ï¿½1000ï¿½~ï¿½lï¿½ï¿½ï¿½ï¿½
     UPDATE Shohin
        SET hanbai_tanka = hanbai_tanka - 1000
-     WHERE shohin_mei = 'ƒJƒbƒ^[ƒVƒƒƒc';
+     WHERE shohin_mei = 'ã‚«ãƒƒã‚¿ãƒ¼ã‚·ãƒ£ãƒ„';
 
-    --TƒVƒƒƒc‚Ì”Ì”„’P‰¿‚ğ1000‰~’lã‚°
+    --Tï¿½Vï¿½ï¿½ï¿½cï¿½ï¿½Pï¿½ï¿½ï¿½ï¿½1000ï¿½~ï¿½lï¿½ã‚°
     UPDATE Shohin
        SET hanbai_tanka = hanbai_tanka + 1000
-     WHERE shohin_mei = 'TƒVƒƒƒc';
+     WHERE shohin_mei = 'Tã‚·ãƒ£ãƒ„';
 
 COMMIT;

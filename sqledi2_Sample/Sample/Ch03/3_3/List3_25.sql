@@ -1,4 +1,4 @@
 SELECT shohin_bunrui, COUNT(*)
   FROM Shohin
  GROUP BY shohin_bunrui
-HAVING shohin_bunrui = 'ˆß•ž';
+HAVING shohin_bunrui = 'è¡£é¡ž';

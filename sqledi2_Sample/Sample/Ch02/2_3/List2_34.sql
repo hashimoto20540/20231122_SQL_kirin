@@ -1,4 +1,4 @@
-SELECT shohin_mei, shiire_tanka
+SELECT shohin_mei, shiire_tanka, shohin_bunrui
   FROM Shohin
- WHERE shohin_bunrui = 'キッチン用品'
+ WHERE shohin_bunrui = '繧ｭ繝�繝√Φ逕ｨ蜈ｷ'
     OR hanbai_tanka >= 3000;
