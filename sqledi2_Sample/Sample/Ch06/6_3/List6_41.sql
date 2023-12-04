@@ -1,7 +1,7 @@
 SELECT shohin_mei,
-       CASE WHEN shohin_bunrui = 'àﬂïû'         THEN 'AÅF' || shohin_bunrui
-            WHEN shohin_bunrui = 'éññ±ópïi'     THEN 'BÅF' || shohin_bunrui
-            WHEN shohin_bunrui = 'ÉLÉbÉ`Éìópïi' THEN 'CÅF' || shohin_bunrui
+       CASE WHEN shohin_bunrui = 'Ë°£È°û'         THEN 'AÔºö' || shohin_bunrui
+            WHEN shohin_bunrui = '‰∫ãÂãôÁî®ÂìÅ'     THEN 'BÔºö' || shohin_bunrui
+            WHEN shohin_bunrui = '„Ç≠„ÉÉ„ÉÅ„É≥Áî®ÂìÅ' THEN 'CÔºö' || shohin_bunrui
             ELSE NULL
        END AS abc_shohin_bunrui
   FROM Shohin;

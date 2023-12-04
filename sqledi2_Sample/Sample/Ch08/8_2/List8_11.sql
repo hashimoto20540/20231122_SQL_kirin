@@ -1,6 +1,15 @@
---OracleADB2ASQL ServerAPostgreSQL
-SELECT '‡Œv' AS shohin_bunrui, SUM(hanbai_tanka)
+--Oracleï¿½ADB2ï¿½ASQL Serverï¿½APostgreSQL
+SELECT 'åˆè¨ˆ' AS shohin_bunrui, SUM(hanbai_tanka)
   FROM Shohin
+UNION ALL
+SELECT shohin_bunrui, SUM(hanbai_tanka)
+  FROM Shohin
+ GROUP BY shohin_bunrui;
+
+
+
+ SELECT 'ã‚ã‚ã‚ã‚' AS shohin_bunrui, SUM(hanbai_tanka)
+  FROM Shohin;
 UNION ALL
 SELECT shohin_bunrui, SUM(hanbai_tanka)
   FROM Shohin

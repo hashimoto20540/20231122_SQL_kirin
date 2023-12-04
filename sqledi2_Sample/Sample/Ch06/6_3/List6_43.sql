@@ -1,5 +1,13 @@
---¤•i•ª—Ş‚²‚Æ‚É”Ì”„’P‰¿‚ğ‡Œv‚µ‚½Œ‹‰Ê‚ğs—ñ•ÏŠ·‚·‚é
-SELECT SUM(CASE WHEN shohin_bunrui = 'ˆß•'         THEN hanbai_tanka ELSE 0 END) AS sum_tanka_ihuku,
-       SUM(CASE WHEN shohin_bunrui = 'ƒLƒbƒ`ƒ“—p•i' THEN hanbai_tanka ELSE 0 END) AS sum_tanka_kitchen,
-       SUM(CASE WHEN shohin_bunrui = '––±—p•i'     THEN hanbai_tanka ELSE 0 END) AS sum_tanka_jimu
+--ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½Ş‚ï¿½ï¿½Æ‚É”Ì”ï¿½ï¿½Pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê‚ï¿½ï¿½sï¿½ï¿½ÏŠï¿½ï¿½ï¿½ï¿½ï¿½
+SELECT SUM(CASE WHEN shohin_bunrui = 'è¡£é¡' THEN hanbai_tanka ELSE 0 END) AS sum_tanka_ihuku,
+       SUM(CASE WHEN shohin_bunrui = 'ã‚­ãƒƒãƒãƒ³ç”¨å“' THEN hanbai_tanka ELSE 0 END) AS sum_tanka_kitchen,
+       SUM(CASE WHEN shohin_bunrui = 'äº‹å‹™ç”¨å“' THEN hanbai_tanka ELSE 0 END) AS sum_tanka_jimu
+  FROM Shohin;
+
+
+
+--6.2
+SELECT SUM(CASE WHEN hanbai_tanka <= 1000 THEN 1 ELSE 0 END) AS low_price, 
+       SUM(CASE WHEN hanbai_tanka BETWEEN 1001 AND 3000 THEN 1 ELSE 0 END) AS mid_price,
+       SUM(CASE WHEN hanbai_tanka > 3000 THEN 1 ELSE 0 END) AS high_price
   FROM Shohin;

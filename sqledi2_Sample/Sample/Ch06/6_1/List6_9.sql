@@ -1,4 +1,4 @@
 SELECT str1,
        LOWER(str1) AS low_str
   FROM SampleStr
- WHERE str1 IN ('ABC', 'aBC', 'abc', 'ŽR“c');
+ WHERE str1 IN ('ABC', 'aBC', 'abc', 'å±±ç”°');
